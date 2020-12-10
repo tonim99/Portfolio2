@@ -1,11 +1,12 @@
 .header {
-    background-color: var(--purple);
+    background-color: var(--blue-purple);
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0px;
 }
 .header .brand {
+    white-space: nowrap;
     padding: 5px 0 0 5px;
     margin: 0px;
 }
@@ -13,6 +14,7 @@
     color: white;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
 }
 .brand a:hover{
     text-decoration: none;

@@ -2,10 +2,13 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/navbar/Navbar';
 
+import Home from './components/home/Home';
+
 function App() {
-  return (
+	return (
 		<div className='App'>
-		 <NavBar />
+			<NavBar />
+			<Home />
 		</div>
 	);
 }
