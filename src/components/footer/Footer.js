@@ -1,11 +1,10 @@
 import React from 'react'
 import './Footer.css'
-function Footer() {
+
+export default function Footer() {
 	return (
-        <footer>
-            <p className='copyright'>&#169; Tonimarie Morris 2020</p>
-        </footer>
+		<footer>
+			<p className='copyright'>&#169; Tonimarie Morris 2020</p>
+		</footer>
 	);
 }
-
-export default Footer;
