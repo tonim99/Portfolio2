@@ -3,17 +3,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     margin-bottom: 0px;
 }
 .header .brand {
     white-space: nowrap;
-    padding: 5px 0 0 5px;
-    margin: 0px;
+    padding: 5px 5px;
+    margin-left: 5px;
 }
 .brand h1 {
     color: white;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     font-size: 2em;
 }
 .brand a:hover{
@@ -21,6 +23,8 @@
 }
 .header .page-links {
     display: flex;
+    justify-content: center;
+    margin-top: 5px;
 }
 
 .page-links div {
@@ -33,6 +37,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     line-height: 10px;
+    font-weight: bold;
 }
 
 .page-links a:hover{
