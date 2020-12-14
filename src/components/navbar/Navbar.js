@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import './Navbar.scss';
 export default function NavBar() {
 	return (
 		<div className='header'>
@@ -8,6 +10,9 @@ export default function NavBar() {
 				<Link to='/'>
 					<h1>Tonimarie Morris</h1>
 				</Link>
+			</div>
+			<div className='fa-bars'>
+				<FontAwesomeIcon icon={faBars} size='2x' color='white' />
 			</div>
 			<div className='page-links'>
 				<div>

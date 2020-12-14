@@ -1,0 +1,40 @@
+.contact-container {
+	// display: flex;
+	margin: auto;
+	margin-top: 10%;
+	padding-top: 60px;
+	height: 250px;
+	width: 400px;
+	border: 5px solid var(--gray-border);
+	border-radius: 5%;
+	background-color: var(--greenish);
+	@media only screen and (min-width: 768px) {
+		margin: auto;
+		height: 300px;
+		width: 500px;
+	}
+	h2 {
+		font-size: 1.5em;
+		text-align: center;
+		font-weight: bold;
+		color: white;
+		font-family: 'Lato', sans-serif;
+		@media only screen and (min-width: 768px) {
+			font-size: 2em;
+		}
+	}
+	.links-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	a {
+		margin: auto;
+		align-items: center;
+		padding: 10px;
+		margin: 10px;
+		@media only screen and (min-width: 768px) {
+			font-size: 1.5em;
+		}
+	}
+}

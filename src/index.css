@@ -1,8 +1,11 @@
 :root {
 	--blue-purple: #454480;
 	--pale-silver: #cdb9b1;
-	--raisin-black: #e4dfda;
+	--gray-border: #5C5A66;
+	--raisin-black: #211E23;
 	--pinkish: #ce5374;
+	--greenish: #5c99ac;
+	--whitish: #ace9fa;
 }
 html {
 	height: 100%;
