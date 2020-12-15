@@ -1,15 +1,15 @@
 .container {
 	width: 90%;
 	margin-top: 35px;
-	.card-deck {
-		.card {
-			height: auto;
-			max-width: 100%;
-			margin: 10px;
-			margin-top: 25px;
-			border: 1px solid var(--gray-border);
-			margin-bottom: 20px;
-		}
+
+	.card {
+		height: auto;
+		max-width: 100%;
+		margin: 10px;
+		margin-top: 25px;
+		border: 1px solid var(--gray-border);
+		margin-bottom: 20px;
+
 		.card-header {
 			width: 100%;
 			background-color: var(--greenish);
@@ -17,30 +17,31 @@
 			font-family: 'Lato', sans-serif;
 			font-size: 1.5em;
 		}
+
 		.card-body {
 			text-align: center;
+
 			.card-text {
 				color: var(--gray-background);
 				font-size: 1.1em;
 			}
+
 			.card-img {
 				width: 100%;
-				height: 15vw;
+				height: 55vw;
 				object-fit: cover;
 			}
+
 			.btn-primary {
 				background-color: var(--blue-purple);
 				border-color: var(--blue-purple);
 				margin: 10px;
 			}
+
 			.btn:focus {
 				outline: none;
 				box-shadow: none;
 			}
-		}
-		@media only screen and (min-width: 768px) {
-			display: flex;
-			justify-content: space-between;
 		}
 	}
 }

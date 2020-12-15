@@ -14,29 +14,29 @@ export default function Projects() {
 	}, []);
 	return (
 		<Container>
-			<CardDeck>
-				{projects.map((project, i) => (
-					<Card key={i}>
-						<Card.Header>{project.Title}</Card.Header>
-						<Card.Body>
-							<Card.Text>{project.Description}</Card.Text>
-							<Card.Img src={project.Image} />
-							<Container fluid>
-								<Row>
-									<Col>
-										<Button onClick={() => console.log('go to repo')}>Repo</Button>
-									</Col>
-									<Col>
-										<Button onClick={() => console.log('go to project')}>
-											Project
-										</Button>
-									</Col>
-								</Row>
-							</Container>
-						</Card.Body>
-					</Card>
-				))}
-			</CardDeck>
+			{projects.map((project, i) => (
+				<Card key={i}>
+					<Card.Header>{project.Title}</Card.Header>
+					<Card.Body>
+						<Card.Text>{project.Description}</Card.Text>
+						<Card.Img src={project.Image} />
+						<Container>
+							<Row>
+								<Col>
+									<Button onClick={() => console.log('go to repo')}>
+										GitHub Repository
+									</Button>
+								</Col>
+								<Col>
+									<Button onClick={() => console.log('go to project')}>
+										Live Project
+									</Button>
+								</Col>
+							</Row>
+						</Container>
+					</Card.Body>
+				</Card>
+			))}
 		</Container>
 	);
 }
