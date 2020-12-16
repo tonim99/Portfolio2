@@ -1,3 +1,4 @@
+import React, {useState} from 'react'
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Switch, Route } from 'react-router-dom';
@@ -5,11 +6,15 @@ import NavBar from './components/navbar/Navbar';
 import Home from './components/home/Home';
 import Footer from './components/footer/Footer';
 import Contact from './components/contact/Contact';
-import Projects from './components/projects/Projects'
+import Projects from './components/projects/Projects';
+import Menu from './components/menu/Menu';
 function App() {
+	const [showMenu, setShowMenu] = useState(false)
+	const clickHandler = () => setShowMenu(!showMenu)
 	return (
 		<div className='App'>
-			<NavBar />
+			<NavBar clickHandler={clickHandler} />
+			{ showMenu? <Menu /> : null }
 			<Switch>
 				<Route exact path='/'>
 					<Home />
@@ -21,7 +26,6 @@ function App() {
 					<Projects />
 				</Route>
 			</Switch>
-
 			<Footer />
 		</div>
 	);

@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Dropdown } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.scss';
 
-export default function NavBar() {
+export default function NavBar({clickHandler}) {
+
 	return (
 		<div className='header'>
 			<div className='brand'>
@@ -14,7 +14,7 @@ export default function NavBar() {
 				</Link>
 			</div>
 			<div className='fa-bars'>
-				<FontAwesomeIcon icon={faBars} size='2x' color='white' />
+				<FontAwesomeIcon icon={faBars} size='2x' color='white' onClick={clickHandler} />
 			</div>
 			<div className='page-links'>
 				<div>
