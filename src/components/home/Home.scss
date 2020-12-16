@@ -6,10 +6,10 @@
 	background-size: contain;
 	background-attachment: fixed;
 	// margin-top: 0;
-	@media only screen and (min-width: 1020px) {
+	@media only screen and (min-width: 992px) {
 		background-color: var(--raisin-black);
 	}
-	@media only screen and (min-width: 1440px) {
+	@media only screen and (min-width: 1200px) {
 		display: flex;
 	}
 	.statement {
@@ -28,13 +28,13 @@
 			margin-top: 0;
 			margin-bottom: 400px;
 		}
-		@media only screen and (min-width: 1020px) {
+		@media only screen and (min-width: 992px) {
 			color: var(--whitish);
 			text-align: center;
 			text-shadow: 3px 3px 4px black, -3px -3px 4px black;
 			font-size: 1.75em;
 		}
-		@media only screen and (min-width: 1440px) {
+		@media only screen and (min-width: 1200px) {
 			color: var(--greenish);
 			max-width: 250px;
 			margin: auto;
