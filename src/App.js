@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react';
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Switch, Route } from 'react-router-dom';
@@ -8,13 +8,15 @@ import Footer from './components/footer/Footer';
 import Contact from './components/contact/Contact';
 import Projects from './components/projects/Projects';
 import Menu from './components/menu/Menu';
+import About from './components/about/About';
+
 function App() {
-	const [showMenu, setShowMenu] = useState(false)
-	const clickHandler = () => setShowMenu(!showMenu)
+	const [showMenu, setShowMenu] = useState(false);
+	const clickHandler = () => setShowMenu(!showMenu);
 	return (
 		<div className='App'>
 			<NavBar clickHandler={clickHandler} />
-			{ showMenu? <Menu /> : null }
+			{showMenu ? <Menu /> : null}
 			<Switch>
 				<Route exact path='/'>
 					<Home />
@@ -24,6 +26,9 @@ function App() {
 				</Route>
 				<Route exact path='/projects'>
 					<Projects />
+				</Route>
+				<Route exact path='/about'>
+					<About />
 				</Route>
 			</Switch>
 			<Footer />

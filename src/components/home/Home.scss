@@ -49,5 +49,15 @@
 			margin-right: 65px;
 			justify-content: center;
 		}
+		.underline {
+			text-decoration: underline;
+			color: var(--gray-border);
+			font-size: larger;
+			text-align: center;
+			margin-top: 20px;
+			@media only screen and (min-width: 768px) {
+				color: var(--whitish)
+			}
+		}
 	}
 }
