@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Home.scss';
+import { Link } from 'react-router-dom';
 import image from '../../assets/images/hero-lg.jpg';
+
 export default function Home() {
 	return (
 		<div className='about'>

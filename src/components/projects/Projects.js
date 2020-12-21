@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import './Projects.scss';
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import './Projects.scss';
 import Tabletop from 'tabletop';
 import Tooltip from 'react-simple-tooltip';
+
 export default function Projects() {
 	const [projects, setProjects] = useState([]);
 	useEffect(() => {

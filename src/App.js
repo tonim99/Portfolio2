@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.scss';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Switch, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/navbar/Navbar';
 import Home from './components/home/Home';
 import Footer from './components/footer/Footer';

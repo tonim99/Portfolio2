@@ -1,6 +1,5 @@
 import React from 'react';
 import './Contact.scss';
-import resume from '../../assets/resume/MorrisResumeFinal.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import {
@@ -8,6 +7,8 @@ import {
 	faLinkedin,
 	faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
+import resume from '../../assets/resume/MorrisResumeFinal.pdf'
+
 export default function Contact() {
 	return (
 		<div className='contact-container'>

@@ -1,11 +1,10 @@
 import React from 'react';
+import './Navbar.scss';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import './Navbar.scss';
 
 export default function NavBar({clickHandler}) {
-
 	return (
 		<div className='header'>
 			<div className='brand'>

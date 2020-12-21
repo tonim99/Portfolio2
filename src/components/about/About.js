@@ -1,22 +1,17 @@
 import React from 'react';
 import './About.scss';
 import { Container, Row, Col } from 'react-bootstrap';
-import image from '../../../src/assets/images/portfolio-pic.jpg';
-import resume from '../../assets/resume/MorrisResumeFinal.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilePdf, faDatabase } from '@fortawesome/free-solid-svg-icons';
 import {
-	// faHtml5,
-	// faCss3,
 	faBootstrap,
 	faSass,
 	faReact,
 	faJs,
-	// faNode,
-	// faNpm,
-	// faYarn,
-	// faGit,
 } from '@fortawesome/free-brands-svg-icons';
+import image from '../../../src/assets/images/portfolio-pic.jpg';
+import resume from '../../assets/resume/MorrisResumeFinal.pdf';
+
 export default function About() {
 	return (
 		<Container className='aboutContainer'>
@@ -44,18 +39,11 @@ export default function About() {
 								This is just a sample, please reach out if you don't see what
 								you're looking for.
 							</p>
-
-							{/* <FontAwesomeIcon icon={faHtml5} size='2x' color='black' />
-				<FontAwesomeIcon icon={faCss3} size='2x' color='black' /> */}
 							<FontAwesomeIcon icon={faJs} size='2x' color='black' />
 							<FontAwesomeIcon icon={faReact} size='2x' color='black' />
 							<FontAwesomeIcon icon={faBootstrap} size='2x' color='black' />
 							<FontAwesomeIcon icon={faSass} size='2x' color='black' />
 							<FontAwesomeIcon icon={faDatabase} size='2x' color='black' />
-							{/* <FontAwesomeIcon icon={faNode} size='2x' color='black' /> */}
-							{/* <FontAwesomeIcon icon={faNpm} size='2x' color='black' />
-				<FontAwesomeIcon icon={faYarn} size='2x' color='black' />
-            <FontAwesomeIcon icon={faGit} size='2x' color='black' /> */}
 						</Col>
 					</Row>
 				</Container>
