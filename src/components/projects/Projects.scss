@@ -6,7 +6,9 @@
 	.card {
 		margin: 10px;
 		margin-bottom: 20px;
-
+		min-height: 85vh;
+		min-width: 375px;
+		max-height: 85vh;
 		.card-header {
 			background-color: var(--greenish);
 			color: #fff;
@@ -16,6 +18,18 @@
 		.card-text {
 			color: var(--gray-background);
 			font-size: 1.1em;
+		}
+		.card-img {
+			margin: auto;
+			max-height: 55vh;
+			max-width: 80vw;
+			@media only screen and (min-width: 768px) {
+				max-width: 250px;
+				max-height: 450px;
+			}
+		}
+		.css-f5brtt-BaseToolTop {
+			white-space: nowrap;
 		}
 		.btn-primary {
 			background-color: var(--blue-purple);
