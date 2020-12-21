@@ -6,6 +6,7 @@
 	.card {
 		margin: 10px;
 		margin-bottom: 20px;
+
 		.card-header {
 			background-color: var(--greenish);
 			color: #fff;
@@ -22,6 +23,7 @@
 			margin: 10px;
 			font-family: 'Montserrat', sans-serif;
 			font-weight: bolder;
+			height: 10%;
 		}
 		.btn:focus {
 			outline: none;

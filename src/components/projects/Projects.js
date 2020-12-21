@@ -16,29 +16,39 @@ export default function Projects() {
 	}, []);
 	return (
 		<Container>
-			<Row xs={1} sm={1} md={1} lg={4} xl={5}>
+			<Row xs={1} sm={1} md={2} lg={2} xl={4}>
 				{projects.map((project, i) => (
-					<Card key={i}>
-						<Card.Header>{project.Title}</Card.Header>
-						<Card.Body>
-							<Card.Text>{project.Description}</Card.Text>
-							<Card.Img src={project.Image} />
-							<Container fluid>
-								<Button onClick={() => console.log('go to repo')}>
-									See Code{' '}
-									<FontAwesomeIcon icon={faCode} size='1x' color='white' />
-								</Button>
-								<Button onClick={() => console.log('go to project')}>
-									Visit Website{' '}
-									<FontAwesomeIcon
-										icon={faExternalLinkAlt}
-										size='1x'
-										color='white'
-									/>
-								</Button>
-							</Container>
-						</Card.Body>
-					</Card>
+					<Col>
+						<Card key={i}>
+							{console.log(project.ProjectLink)}
+							<Card.Header>{project.Title}</Card.Header>
+							<Card.Body>
+								<Card.Text>{project.Description}</Card.Text>
+								<Card.Img src={project.Image} />
+								<Container fluid>
+									<a href={project.FeRepoLink} target='_blank' rel='noreferrer'>
+										<Button>
+											See Code{' '}
+											<FontAwesomeIcon icon={faCode} size='1x' color='white' />
+										</Button>
+									</a>
+									<a
+										href={project.ProjectLink}
+										target='_blank'
+										rel='noreferrer'>
+										<Button>
+											Visit Website{' '}
+											<FontAwesomeIcon
+												icon={faExternalLinkAlt}
+												size='1x'
+												color='white'
+											/>
+										</Button>
+									</a>
+								</Container>
+							</Card.Body>
+						</Card>
+					</Col>
 				))}
 			</Row>
 		</Container>
