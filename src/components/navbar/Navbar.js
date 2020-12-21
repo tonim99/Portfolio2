@@ -10,7 +10,7 @@ export default function NavBar({clickHandler}) {
 		<div className='header'>
 			<div className='brand'>
 				<Link to='/'>
-					<h1>Tonimarie Morris</h1>
+					<h1>TM</h1>
 				</Link>
 			</div>
 			<div className='fa-bars'>

@@ -9,7 +9,7 @@ export default function Home() {
 			<div className='statementDiv'>
 				<p className='statement'>
 					{' '}
-					I am a detail-oriented Full-Stack developer who values collaboration
+					I'm Tonimarie, a detail-oriented full-stack developer who values collaboration
 					and has an insatiable hunger for knowledge. I create clean,
 					responsive, user-first applications optimized for mobile and web.
 					<Link to='/projects'>
