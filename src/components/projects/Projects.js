@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import './Projects.scss';
 import Tabletop from 'tabletop';
 import Tooltip from 'react-simple-tooltip';
@@ -29,31 +30,53 @@ export default function Projects() {
 								<Container>
 									<a href={project.FeRepoLink} target='_blank' rel='noreferrer'>
 										<Tooltip
-											background='#fff'
-											color='#000'
+											background='var(--raisin-black)'
+											color='var(--whitish)'
 											padding='5'
-											placement='top'
-											radius='15'
-											content='See Code'>
+											placement='bottom'
+											radius='2'
+											content='See Front-End Repo'>
 											<Button>
 												<FontAwesomeIcon
-													icon={faCode}
+													icon={faGithub}
 													size='1x'
 													color='white'
 												/>
 											</Button>
 										</Tooltip>
 									</a>
+									{project.BeRepoLink ? (
+										<a
+											href={project.BeRepoLink}
+											target='_blank'
+											rel='noreferrer'>
+											<Tooltip
+												background='var(--raisin-black)'
+												color='var(--whitish)'
+												padding='5'
+												placement='bottom'
+												radius='2'
+												content='See Back-End Repo'>
+												<Button>
+													<FontAwesomeIcon
+														icon={faCode}
+														size='1x'
+														color='white'
+													/>
+												</Button>
+											</Tooltip>
+										</a>
+									) : null}
 									<a
 										href={project.ProjectLink}
 										target='_blank'
 										rel='noreferrer'>
 										<Tooltip
-											background='#fff'
-											color='#000'
+											background='var(--raisin-black)'
+											color='var(--whitish)'
 											padding='5'
-											placement='top'
-											radius='15'
+											placement='bottom'
+											radius='2'
 											content='Visit Website'>
 											<Button>
 												<FontAwesomeIcon

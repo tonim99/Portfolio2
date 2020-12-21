@@ -4,10 +4,9 @@
 .container-sm,
 .container-xl {
 	.card {
-		margin: 10px;
+		margin: 5px;
 		margin-bottom: 20px;
 		min-height: 85vh;
-		min-width: 375px;
 		max-height: 85vh;
 		.card-header {
 			background-color: var(--greenish);
@@ -18,6 +17,7 @@
 		.card-text {
 			color: var(--gray-background);
 			font-size: 1.1em;
+			margin: 5px;
 		}
 		.card-img {
 			margin: auto;
@@ -28,7 +28,7 @@
 				max-height: 450px;
 			}
 		}
-		.css-f5brtt-BaseToolTop {
+		.css-bbq5bh { 
 			white-space: nowrap;
 		}
 		.btn-primary {
