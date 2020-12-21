@@ -1,7 +1,8 @@
 import React from 'react';
 import './Contact.scss';
+import resume from '../../assets/resume/MorrisResumeFinal.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import {
 	faGithub,
 	faLinkedin,
@@ -29,6 +30,12 @@ export default function Contact() {
 					target='_blank'
 					rel='noreferrer'>
 					<FontAwesomeIcon icon={faTwitter} size='2x' color='white' />
+				</a>
+				<a
+					href={resume}
+					target='_blank'
+					rel='noreferrer'>
+					<FontAwesomeIcon icon={faFilePdf} size='2x' color='white' />
 				</a>
 			</div>
 		</div>
