@@ -6,8 +6,10 @@
 	.card {
 		margin: 5px;
 		margin-bottom: 20px;
-		min-height: 85vh;
-		max-height: 85vh;
+		@media only screen and (min-width: 768px) {
+			min-height: 85vh;
+			max-height: 85vh;
+		}
 		.card-header {
 			background-color: var(--greenish);
 			color: #fff;
@@ -21,14 +23,13 @@
 		}
 		.card-img {
 			margin: auto;
-			max-height: 55vh;
 			max-width: 80vw;
 			@media only screen and (min-width: 768px) {
 				max-width: 250px;
 				max-height: 450px;
 			}
 		}
-		.css-bbq5bh { 
+		.css-bbq5bh {
 			white-space: nowrap;
 		}
 		.btn-primary {
