@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import './Projects.scss';
 import Tabletop from 'tabletop';
+import Tooltip from 'react-simple-tooltip';
 export default function Projects() {
 	const [projects, setProjects] = useState([]);
 	useEffect(() => {
@@ -16,7 +17,7 @@ export default function Projects() {
 	}, []);
 	return (
 		<Container>
-			<Row xs={1} sm={1} md={2} lg={2} xl={4}>
+			<Row xs={1} md={2} xl={4}>
 				{projects.map((project, i) => (
 					<Col>
 						<Card key={i}>
@@ -25,25 +26,43 @@ export default function Projects() {
 							<Card.Body>
 								<Card.Text>{project.Description}</Card.Text>
 								<Card.Img src={project.Image} />
-								<Container fluid>
+								<Container>
 									<a href={project.FeRepoLink} target='_blank' rel='noreferrer'>
-										<Button>
-											See Code{' '}
-											<FontAwesomeIcon icon={faCode} size='1x' color='white' />
-										</Button>
+										<Tooltip
+											background='#fff'
+											color='#000'
+											padding='5'
+											placement='top'
+											radius='15'
+											content='See Code'>
+											<Button>
+												<FontAwesomeIcon
+													icon={faCode}
+													size='1x'
+													color='white'
+												/>
+											</Button>
+										</Tooltip>
 									</a>
 									<a
 										href={project.ProjectLink}
 										target='_blank'
 										rel='noreferrer'>
-										<Button>
-											Visit Website{' '}
-											<FontAwesomeIcon
-												icon={faExternalLinkAlt}
-												size='1x'
-												color='white'
-											/>
-										</Button>
+										<Tooltip
+											background='#fff'
+											color='#000'
+											padding='5'
+											placement='top'
+											radius='15'
+											content='Visit Website'>
+											<Button>
+												<FontAwesomeIcon
+													icon={faExternalLinkAlt}
+													size='1x'
+													color='white'
+												/>
+											</Button>
+										</Tooltip>
 									</a>
 								</Container>
 							</Card.Body>
