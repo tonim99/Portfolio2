@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Projects.scss';
-import { Card, Button, Container, Row, Col } from 'react-bootstrap';
+import { Card, Button, Container, Row, Col, Spinner } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -17,13 +17,12 @@ export default function Projects() {
 			.then((data) => setProjects(data))
 			.catch((err) => console.warn(err));
 	}, []);
-	return (
+	const loaded = () => (
 		<Container>
 			<Row xs={1} md={2} xl={4}>
 				{projects.map((project, i) => (
 					<Col>
 						<Card key={i}>
-							{console.log(project.ProjectLink)}
 							<Card.Header>{project.Title}</Card.Header>
 							<Card.Body>
 								<Card.Text>{project.Description}</Card.Text>
@@ -99,6 +98,12 @@ export default function Projects() {
 					</Col>
 				))}
 			</Row>
-		</Container>
+		</Container>)
+	return projects.length > 0 ? (
+		loaded()
+	) : (
+		<Spinner animation='border' role='status'>
+			<span className='sr-only'>Loading...</span>
+		</Spinner>
 	);
 }
