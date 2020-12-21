@@ -3,7 +3,6 @@
 	height: 100vh;
 	@media only screen and (min-width: 768px) {
 		background-color: var(--raisin-black);
-		height: 100vh;
 	}
 	@media only screen and (min-width: 1550px) {
 		display: flex;
@@ -56,7 +55,7 @@
 			text-align: center;
 			margin-top: 20px;
 			@media only screen and (min-width: 768px) {
-				color: var(--whitish)
+				color: var(--whitish);
 			}
 		}
 	}

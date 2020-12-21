@@ -28,26 +28,9 @@ export default function Projects() {
 								<Card.Text>{project.Description}</Card.Text>
 								<Card.Img src={project.Image} />
 								<Container>
-									<a href={project.FeRepoLink} target='_blank' rel='noreferrer'>
-										<Tooltip
-											background='var(--raisin-black)'
-											color='var(--whitish)'
-											padding='5'
-											placement='bottom'
-											radius='2'
-											content='See Front-End Repo'>
-											<Button>
-												<FontAwesomeIcon
-													icon={faGithub}
-													size='1x'
-													color='white'
-												/>
-											</Button>
-										</Tooltip>
-									</a>
-									{project.BeRepoLink ? (
+									<Row>
 										<a
-											href={project.BeRepoLink}
+											href={project.FeRepoLink}
 											target='_blank'
 											rel='noreferrer'>
 											<Tooltip
@@ -56,37 +39,59 @@ export default function Projects() {
 												padding='5'
 												placement='bottom'
 												radius='2'
-												content='See Back-End Repo'>
+												content='See Front-End Repo'>
 												<Button>
 													<FontAwesomeIcon
-														icon={faCode}
+														icon={faGithub}
 														size='1x'
 														color='white'
 													/>
 												</Button>
 											</Tooltip>
 										</a>
-									) : null}
-									<a
-										href={project.ProjectLink}
-										target='_blank'
-										rel='noreferrer'>
-										<Tooltip
-											background='var(--raisin-black)'
-											color='var(--whitish)'
-											padding='5'
-											placement='bottom'
-											radius='2'
-											content='Visit Website'>
-											<Button>
-												<FontAwesomeIcon
-													icon={faExternalLinkAlt}
-													size='1x'
-													color='white'
-												/>
-											</Button>
-										</Tooltip>
-									</a>
+										{project.BeRepoLink ? (
+											<a
+												href={project.BeRepoLink}
+												target='_blank'
+												rel='noreferrer'>
+												<Tooltip
+													background='var(--raisin-black)'
+													color='var(--whitish)'
+													padding='5'
+													placement='bottom'
+													radius='2'
+													content='See Back-End Repo'>
+													<Button>
+														<FontAwesomeIcon
+															icon={faCode}
+															size='1x'
+															color='white'
+														/>
+													</Button>
+												</Tooltip>
+											</a>
+										) : null}
+										<a
+											href={project.ProjectLink}
+											target='_blank'
+											rel='noreferrer'>
+											<Tooltip
+												background='var(--raisin-black)'
+												color='var(--whitish)'
+												padding='5'
+												placement='bottom'
+												radius='2'
+												content='Visit Website'>
+												<Button>
+													<FontAwesomeIcon
+														icon={faExternalLinkAlt}
+														size='1x'
+														color='white'
+													/>
+												</Button>
+											</Tooltip>
+										</a>
+									</Row>
 								</Container>
 							</Card.Body>
 						</Card>
