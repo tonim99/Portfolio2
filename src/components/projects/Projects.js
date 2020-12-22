@@ -98,7 +98,8 @@ export default function Projects() {
 					</Col>
 				))}
 			</Row>
-		</Container>)
+		</Container>
+	);
 	return projects.length > 0 ? (
 		loaded()
 	) : (

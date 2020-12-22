@@ -15,8 +15,8 @@ function App() {
 	const clickHandler = () => setShowMenu(!showMenu);
 	return (
 		<div className='App'>
-			<NavBar clickHandler={clickHandler} />
-			{showMenu ? <Menu /> : null}
+			{/* <NavBar clickHandler={clickHandler} />
+			{showMenu ? <Menu /> : null} */}
 			<Switch>
 				<Route exact path='/'>
 					<Home />

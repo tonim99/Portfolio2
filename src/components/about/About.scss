@@ -4,15 +4,8 @@
 	height: 90vh;
 	margin: 10px;
 	.profile {
-		margin: auto;
-		height: 255px;
-		width: 265px;
-		border-radius: 30%;
-	}
-	.techContainer {
-		margin-bottom: 50px;
-	}
-	.resumeContainer {
-		margin-bottom: 70px;
+		img {
+			width: 65%;
+		}
 	}
 }

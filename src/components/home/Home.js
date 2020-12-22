@@ -1,23 +1,26 @@
 import React from 'react';
 import './Home.scss';
 import { Link } from 'react-router-dom';
-import image from '../../assets/images/hero-lg.jpg';
+// import image from '../../assets/images/hero-img-bw.png'
 
 export default function Home() {
 	return (
-		<div className='about'>
-			<img src={image} alt='coding' className='hero' />
-			<div className='statementDiv'>
-				<p className='statement'>
-					{' '}
-					I'm Tonimarie, a detail-oriented full-stack developer who values collaboration
-					and has an insatiable hunger for knowledge. I create clean,
-					responsive, user-first applications optimized for mobile and web.
-					<Link to='/projects'>
-						<p className='underline'>See my Work</p>
-					</Link>
-				</p>
+		<header className='header'>
+			{/* <img src={image} alt='coding' className='hero' /> */}
+			<div className='brand-box'>
+				<Link className='link' to='/'>
+					<h1 className='brand'>TM</h1>
+				</Link>
 			</div>
-		</div>
+			<div className='statement-box'>
+				<h1 className='heading-primary'>
+					<span className='heading-primary-main'>Tonimarie Morris</span>
+					<span class='heading-primary-sub'>Full-Stack Software Engineer</span>
+				</h1>
+				<a href='/projects' className='btn btn-pink btn-animated'>
+					See my work
+				</a>
+			</div>
+		</header>
 	);
 }
