@@ -16,27 +16,28 @@ export default function About() {
 	return (
 		<Container className='aboutContainer'>
 			<Row xs={1} md={2}>
-				<Col className='profile' md={{ order: 2 }}>
-					<img src={image} alt='profile' />
+				<Col md={{ order: 2 }}>
+					<img src={image} alt='profile' className='profile'/>
 				</Col>
 				<Col md={{ order: 1 }}>
 					<h2>About Me</h2>
 					<p>
-						Hello! I'm Tonimarie. I am an account manager turned full-stack
-						software engineer, with an insatiable hunger for knowledge. I live
-						in the beautiful Shenandoah Valley in central Virginia with my two
-						Akitas, and I drink copious amounts of coffee while creating
-						applications for the web.
+						Hello! I'm Tonimarie. I am a full-stack software engineer, based in
+						the beautiful Shenandoah Valley, who is meticulous in her work and
+						scrutinizes it from a user's perspective to ensure quality.
 					</p>
 					<p>
-						My extensive consultative sales and account management experience
-						has given me the ability to collaborate with clients and teammates
-						to ensure that we reach win-win solutions.
+						Previously, I worked in consultative sales and account management;
+						now I use the skills I gained to collaborate effectively with
+						clients and colleagues in order to provide mutually beneficial
+						solutions. Challenging work sparks my creativity. I excel in a
+						rapidly changing organization, and am loath to accept "this is how
+						we've always done it."
 					</p>
 					<p>
-						In my spare time, I sing with a band called Blues Soup and a duo
-						called 4th Street Manor. I also volunteer as Secretary of the local
-						Democratic Committee.
+						When I'm not developing your next application or expanding my skill
+						set, I'm volunteering locally, spending time with my two Akitas, or
+						singing with the band Blues Soup and the duo 4th Street Manor.
 					</p>
 					<a href={resume} target='_blank' rel='noreferrer'>
 						<FontAwesomeIcon icon={faFilePdf} size='2x' color='black' />

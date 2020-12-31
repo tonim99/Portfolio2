@@ -1,69 +1,63 @@
-div {
-	.nav {
-		width: 100%;
-		// background-color: var(--blue-purple);
-		background-color: black;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		position: sticky;
-		top: 0;
-		max-height: 55px;
-	}
-	.brand {
-		white-space: nowrap;
-		padding: 5px 5px;
-		margin-left: 5px;
-		:hover {
+.nav {
+	position: absolute;
+	top: 0;
+	z-index: 1000;
+
+	&__brand-box {
+		position: absolute;
+		top: 3rem;
+		left: 3rem;
+		transition: all 0.2s;
+
+		&-link {
+		font-size: 3.5rem;
+		color: #de38c8;
+		font-family: 'Kaushan Script', cursive;
+		font-weight: bold;
+		text-decoration: none;
+		
+		&:link,
+		&:visited {
 			text-decoration: none;
+			text-transform: uppercase;
 		}
-		h1 {
-			color: white;
-			text-decoration: none;
-			font-family: 'Kaushan Script', cursive;
-			font-weight: bold;
-			font-size: 1.5em;
-			@media only screen and (min-width: 768px) {
-				font-size: 2em;
-			}
+		
+		&:hover {
+			transform: translateY(-3px);
+			color: black;
+			font-size: 3.6rem;
 		}
-	}
-	.fa-bars {
-		display: flex;
-		padding-right: 5px;
-		@media only screen and (min-width: 768px) {
-			display: none;
+		
 		}
 	}
-	.page-links div {
-		padding: 10px;
-		@media only screen and (min-width: 992px) {
-			padding: 20px;
+	&__fa-bars-box {
+		position: fixed;
+		top: 3rem;
+		right: 3rem;
+		background-color: rgba(153, 153, 153, 0.5);
+		border-radius: 50%;
+		padding: 1.25rem;
+		cursor: pointer;
+		transition: all 0.2s;
+		&:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+
+			&::after {
+				transform: scaleX(1.4) scaleY(1.6);
+				opacity: 0;
+			}
 		}
-	}
-	.page-links {
-		display: none;
-		@media only screen and (min-width: 768px) {
-			display: flex;
-			justify-content: space-around;
-			margin-top: 5px;
-		}
-		a {
-			color: white;
-			text-decoration: none;
-			font-family: 'Montserrat', sans-serif;
-			line-height: 10px;
-			font-weight: bold;
-			@media only screen and (min-width: 768px) {
-				font-size: 22px;
-			}
-			@media only screen and (min-width: 992px) {
-				font-size: 24px;
-			}
-			:hover {
-				text-decoration: none;
-				color: white;
-			}
+
+		&:active {
+			transform: translateY(1px);
+			box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 		}
 	}
 }
+// .fa-bars {
+// 	&:hover,
+// 	&:active {
+// 		color: #de38c8;
+// 	}
+// }

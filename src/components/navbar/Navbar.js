@@ -4,34 +4,22 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-export default function NavBar({clickHandler}) {
+export default function NavBar({ clickHandler, hideMenu }) {
 	return (
-		<div className='nav'>
-			<div className='brand'>
-				<Link to='/'>
-					<h1>TM</h1>
+		<nav className='nav'>
+			<div className='nav__brand-box'>
+				<Link className='nav__brand-box-link' to='/' onClick={hideMenu}>
+					TM
 				</Link>
 			</div>
-			<div className='fa-bars'>
-				<FontAwesomeIcon icon={faBars} size='2x' color='white' onClick={clickHandler} />
+			<div className='nav__fa-bars-box' onClick={clickHandler}>
+				<FontAwesomeIcon
+					className='fa-bars'
+					icon={faBars}
+					size='3x'
+					color='black'
+				/>
 			</div>
-			<div className='page-links'>
-				<div>
-					<Link to='/about'>
-						<p>About</p>
-					</Link>
-				</div>
-				<div>
-					<Link to='/projects'>
-						<p>Projects</p>
-					</Link>
-				</div>
-				<div>
-					<Link to='/contact'>
-						<p>Contact</p>
-					</Link>
-				</div>
-			</div>
-		</div>
+		</nav>
 	);
 }

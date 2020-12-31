@@ -9,17 +9,7 @@
 	background-size: cover;
 	background-position: center;
 	position: relative;
-	&__brand-box {
-		position: absolute;
-		top: 3rem;
-		left: 3rem;
-	}
-	&__link {
-		font-size: 3.5rem;
-		color: #de38c8;
-		font-family: 'Kaushan Script', cursive;
-		font-weight: bold;
-	}
+
 	&__statement-box {
 		position: absolute;
 		top: 35%;

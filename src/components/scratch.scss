@@ -1,0 +1,56 @@
+.brand {
+		white-space: nowrap;
+		padding: 5px 5px;
+		margin-left: 5px;
+		:hover {
+			text-decoration: none;
+		}
+		h1 {
+			color: white;
+			text-decoration: none;
+			font-family: 'Kaushan Script', cursive;
+			font-weight: bold;
+			font-size: 1.5em;
+			@media only screen and (min-width: 768px) {
+				font-size: 2em;
+			}
+		}
+	}
+	.fa-bars {
+		display: flex;
+		padding-right: 5px;
+		@media only screen and (min-width: 768px) {
+			display: none;
+		}
+	}
+	.page-links div {
+		padding: 10px;
+		@media only screen and (min-width: 992px) {
+			padding: 20px;
+		}
+	}
+	.page-links {
+		display: none;
+		@media only screen and (min-width: 768px) {
+			display: flex;
+			justify-content: space-around;
+			margin-top: 5px;
+		}
+		a {
+			color: white;
+			text-decoration: none;
+			font-family: 'Montserrat', sans-serif;
+			line-height: 10px;
+			font-weight: bold;
+			@media only screen and (min-width: 768px) {
+				font-size: 22px;
+			}
+			@media only screen and (min-width: 992px) {
+				font-size: 24px;
+			}
+			:hover {
+				text-decoration: none;
+				color: white;
+			}
+		}
+	}
