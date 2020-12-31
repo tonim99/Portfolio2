@@ -22,16 +22,16 @@ export default function App() {
 			{showMenu ? <Menu hideMenu={hideMenu} /> : null}
 			<Switch>
 				<Route exact path='/'>
-					<Home />
+					{showMenu ? null : <Home />}
 				</Route>
 				<Route exact path='/contact'>
-					<Contact />
+					{showMenu ? null : <Contact />}
 				</Route>
 				<Route exact path='/projects'>
-					<Projects />
+					{showMenu ? null : <Projects />}
 				</Route>
 				<Route exact path='/about'>
-					<About />
+					{showMenu ? null : <About />}
 				</Route>
 			</Switch>
 			<Footer />
