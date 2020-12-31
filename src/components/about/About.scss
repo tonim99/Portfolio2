@@ -1,12 +1,14 @@
-.aboutContainer {
-	display: grid;
+.about {
 	position: relative;
 	width: 100%;
 	height: 90vh;
 	margin: 10px;
 	margin-top: 85px;
-	.profile {
+	&__img {
 		position: absolute;
-		width: 65%;
+		width: 75%;
+		margin: 0 auto;
+	}
+	&__content {
 	}
 }

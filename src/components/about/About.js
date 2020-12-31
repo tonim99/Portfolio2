@@ -14,12 +14,12 @@ import resume from '../../assets/resume/MorrisResumeFinal.pdf';
 
 export default function About() {
 	return (
-		<Container className='aboutContainer'>
+		<Container className='about'>
 			<Row xs={1} md={2}>
 				<Col md={{ order: 2 }}>
-					<img src={image} alt='profile' className='profile'/>
+					<img src={image} alt='profile' className='about__img'/>
 				</Col>
-				<Col md={{ order: 1 }}>
+				<Col className='about__content' md={{ order: 1 }}>
 					<h2>About Me</h2>
 					<p>
 						Hello! I'm Tonimarie. I am a full-stack software engineer, based in
