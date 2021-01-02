@@ -17,8 +17,7 @@
 			display: block;
 			position: absolute;
 			left: 50%;
-			transform: translate(-50%);
-			margin-bottom: 10rem;
+			transform: translate(-50%, -100%);
 		}
 		@media (min-width: 600px) {
 		}
@@ -60,18 +59,19 @@
 		}
 		.btn-primary,
 		.btn--sq {
-			background-color: transparent !important;
+			// background-color: transparent !important;
+			background-color: rgba(0, 0, 0, 0.1);
 			border: white;
 			color: black;
 			margin: 10px;
 			font-family: 'Montserrat', sans-serif;
 			font-weight: bolder;
 			height: 10%;
-			border-bottom: 2px solid #de38c8;
 			border-radius: 2px;
 			padding: 1rem;
 			&:hover {
 				background-color: #de38c8 !important;
+				border-bottom: 2px solid #de38c8;
 			}
 		}
 	}

@@ -41,7 +41,7 @@ export default function Projects() {
 								placement='top'
 								radius='2'
 								content='See Front-End Repo'>
-								<FontAwesomeIcon icon={faGithub} size='1x' color='black' />
+								<FontAwesomeIcon icon={faGithub} size='1x' color='white' />
 							</Tooltip>
 						</Button>
 						{project.BeRepoLink ? (
@@ -56,7 +56,7 @@ export default function Projects() {
 									placement='top'
 									radius='2'
 									content='See Back-End Repo'>
-									<FontAwesomeIcon icon={faCode} size='1x' color='black' />
+									<FontAwesomeIcon icon={faCode} size='1x' color='white' />
 								</Tooltip>
 							</Button>
 						) : null}
@@ -71,7 +71,7 @@ export default function Projects() {
 								<FontAwesomeIcon
 									icon={faExternalLinkAlt}
 									size='1x'
-									color='black'
+									color='white'
 								/>
 							</Tooltip>
 						</Button>
