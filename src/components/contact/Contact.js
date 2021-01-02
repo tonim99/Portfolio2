@@ -17,7 +17,7 @@ export default function Contact() {
 				<div className='links-container-links'>
 					<a
 						className='link'
-						href='https://www.linkedin.com/in/tonimarie-morris-50a010104/'
+						href='https://www.linkedin.com/in/tonim99/'
 						target='_blank'
 						rel='noreferrer'>
 						<FontAwesomeIcon icon={faLinkedin} size='2x' color='white' />

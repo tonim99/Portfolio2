@@ -10,24 +10,23 @@
 		transition: all 0.2s;
 
 		&-link {
-		font-size: 3.5rem;
-		color: #de38c8;
-		font-family: 'Kaushan Script', cursive;
-		font-weight: bold;
-		text-decoration: none;
-		
-		&:link,
-		&:visited {
+			font-size: 3.5rem;
+			color: #de38c8;
+			font-family: 'Kaushan Script', cursive;
+			font-weight: bold;
 			text-decoration: none;
-			text-transform: uppercase;
-		}
-		
-		&:hover {
-			transform: translateY(-3px);
-			color: black;
-			font-size: 3.6rem;
-		}
-		
+
+			&:link,
+			&:visited {
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+
+			&:hover {
+				transform: translateY(-3px);
+				color: black;
+				font-size: 3.6rem;
+			}
 		}
 	}
 	&__fa-bars-box {

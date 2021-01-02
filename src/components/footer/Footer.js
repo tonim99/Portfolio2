@@ -12,7 +12,7 @@ export default function Footer() {
 	return (
 		<footer className='footer'>
 			<a
-				href='https://www.linkedin.com/in/tonimarie-morris-50a010104/'
+				href='https://www.linkedin.com/in/tonim99/'
 				target='_blank'
 				rel='noreferrer'>
 				<FontAwesomeIcon icon={faLinkedin} size='3x' color='white' />
