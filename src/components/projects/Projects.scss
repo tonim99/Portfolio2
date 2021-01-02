@@ -1,48 +1,78 @@
-.container,
-.container-md,
-.container-xs,
-.container-xl {
-	.card {
-		margin: 5px;
-		margin-bottom: 20px;
-		@media only screen and (min-width: 768px) {
-			min-height: 85vh;
-			max-height: 70vh;
-			margin-bottom: 55px;
+.project {
+	&__container {
+		margin-top: 6rem;
+		position: relative;
+		min-height: 90vh;
+		display: grid;
+		grid-template-columns: 1fr;
+		@media (min-width: 80rem) {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 2rem;
 		}
-		.card-header {
-			background-color: var(--greenish);
+		@media (min-width: 110rem) {
+			grid-template-columns: repeat(3, 1fr);
+			gap: 2rem;
+		}
+		&-btn-grp {
+			display: block;
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%);
+			margin-bottom: 10rem;
+		}
+		@media (min-width: 600px) {
+		}
+	}
+	&__card {
+		position: relative;
+		display: block;
+		justify-content: center;
+		margin-top: 4rem;
+		margin-bottom: 4rem;
+		@media (min-width: 768) {
+			max-width: 50%;
+		}
+		&-title {
+			text-align: center;
+			background-color: #000;
 			color: #fff;
+			padding: 1rem;
 			font-family: 'Lato', sans-serif;
-			font-size: 1.5em;
+			font-weight: bold;
+			font-size: 2rem;
+			margin-bottom: 2rem;
+			border-radius: 3px;
 		}
-		.card-text {
-			color: var(--gray-background);
-			font-size: 1.1em;
-			margin: 5px;
+		&-text {
+			color: #333;
+			font-size: 1.4rem;
 		}
-		.card-img {
-			margin: auto;
+		&-img {
+			display: block;
+			max-height: 50vh;
+			margin: 0 auto;
+			border-radius: 3px;
 			max-width: 80vw;
-			@media only screen and (min-width: 768px) {
-				max-width: 250px;
-				max-height: 450px;
-			}
+			// @media only screen and (min-width: 768px) {
+			// 	max-width: 250px;
+			// 	max-height: 450px;
+			// }
 		}
-		.css-bbq5bh {
-			white-space: nowrap;
-		}
-		.btn-primary {
-			background-color: var(--blue-purple);
-			border-color: var(--blue-purple);
+		.btn-primary,
+		.btn--sq {
+			background-color: transparent !important;
+			border: white;
+			color: black;
 			margin: 10px;
 			font-family: 'Montserrat', sans-serif;
 			font-weight: bolder;
 			height: 10%;
-		}
-		.btn:focus {
-			outline: none;
-			box-shadow: none;
+			border-bottom: 2px solid #de38c8;
+			border-radius: 2px;
+			padding: 1rem;
+			&:hover {
+				background-color: #de38c8 !important;
+			}
 		}
 	}
 }
