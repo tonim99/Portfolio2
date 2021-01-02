@@ -34,14 +34,37 @@
 		animation-name: moveInLeft;
 		animation-duration: 1s;
 		animation-timing-function: ease-out;
+
+		@media (max-width: 56.25em) {
+			padding-top: 2rem;
+			font-size: 5.5rem;
+			letter-spacing: 2.5rem;
+		}
+			@media (max-width: 37.5em) {
+			padding-top: 2rem;
+			font-size: 4rem;
+			letter-spacing: 1.5rem;
+		}
 	}
 	&--sub {
 		display: block;
+		padding-top: 1rem;
 		font-size: 2rem;
 		font-weight: 700;
 		letter-spacing: 1.75rem;
 
 		animation: moveInRight 1s ease-out;
+
+		@media (max-width: 56.25em) {
+			padding-top: 2rem;
+			letter-spacing: 1rem;
+		}
+
+		@media (max-width: 37.5em) {
+			padding-top: 1.5rem;
+			font-size: 1.5rem;
+			letter-spacing: .5rem;
+		}
 	}
 }
 
@@ -101,6 +124,7 @@
 		transition: all 0.2s;
 		position: relative;
 		font-size: 1.6rem;
+		white-space: nowrap;
 	}
 
 	&:hover {

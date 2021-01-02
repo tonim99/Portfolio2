@@ -1,8 +1,9 @@
 import React from 'react';
 import './About.scss';
+import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFilePdf, faDatabase } from '@fortawesome/free-solid-svg-icons';
+import { faFileDownload, faDatabase } from '@fortawesome/free-solid-svg-icons';
 import {
 	faBootstrap,
 	faSass,
@@ -10,17 +11,17 @@ import {
 	faJs,
 } from '@fortawesome/free-brands-svg-icons';
 import image from '../../../src/assets/images/portfolio-pic.jpg';
-import resume from '../../assets/resume/MorrisResumeFinal.pdf';
+import resume from '../../assets/resume/Morris Resume1121.pdf';
 
 export default function About() {
 	return (
 		<Container className='about'>
 			<Row xs={1} md={2}>
 				<Col md={{ order: 2 }}>
-					<img src={image} alt='profile' className='about__img'/>
+					<img src={image} alt='profile' className='about__img' />
 				</Col>
 				<Col className='about__content' md={{ order: 1 }}>
-					<h2>About Me</h2>
+					<h2 className='heading-secondary'>About Me</h2>
 					<p>
 						Hello! I'm Tonimarie. I am a full-stack software engineer, based in
 						the beautiful Shenandoah Valley, who is meticulous in her work and
@@ -39,24 +40,51 @@ export default function About() {
 						set, I'm volunteering locally, spending time with my two Akitas, or
 						singing with the band Blues Soup and the duo 4th Street Manor.
 					</p>
-					<a href={resume} target='_blank' rel='noreferrer'>
-						<FontAwesomeIcon icon={faFilePdf} size='2x' color='black' />
-						<p>Download my Resume</p>
-					</a>
+					<div className='buttons'>
+						<a
+							href={resume}
+							target='_blank'
+							rel='noreferrer'
+							className='btn btn--sq'>
+							My Resume &rarr;
+						</a>
+						<Link to='/Contact' className='btn btn--sq'>
+							Contact Me &rarr;
+						</Link>
+					</div>
 				</Col>
-			</Row>
-			<Row>
-				<Col>
+				<Col className='tech' md={{ order: 3 }}>
 					<h3>Some Technologies I use</h3>
-					<p>
-						This is just a sample, please reach out if you don't see what you're
-						looking for.
-					</p>
-					<FontAwesomeIcon icon={faJs} size='2x' color='black' />
-					<FontAwesomeIcon icon={faReact} size='2x' color='black' />
-					<FontAwesomeIcon icon={faBootstrap} size='2x' color='black' />
-					<FontAwesomeIcon icon={faSass} size='2x' color='black' />
-					<FontAwesomeIcon icon={faDatabase} size='2x' color='black' />
+					<FontAwesomeIcon
+						className='icon'
+						icon={faJs}
+						size='2x'
+						color='black'
+					/>
+					<FontAwesomeIcon
+						className='icon'
+						icon={faReact}
+						size='2x'
+						color='black'
+					/>
+					<FontAwesomeIcon
+						className='icon'
+						icon={faBootstrap}
+						size='2x'
+						color='black'
+					/>
+					<FontAwesomeIcon
+						className='icon'
+						icon={faSass}
+						size='2x'
+						color='black'
+					/>
+					<FontAwesomeIcon
+						className='icon'
+						icon={faDatabase}
+						size='2x'
+						color='black'
+					/>
 				</Col>
 			</Row>
 		</Container>
