@@ -23,7 +23,9 @@ export default function About() {
 						<img src={image} alt='profile' className='about__img' />
 					</Col>
 					<Col className='about__content' md={{ order: 1 }}>
-						<h2 className='heading-secondary'>About Me</h2>
+						<h2 className='heading-secondary heading-secondary--main'>
+							About Me
+						</h2>
 						<p>
 							Hello! I'm Tonimarie. I am a full-stack software engineer, based
 							in the beautiful Shenandoah Valley, who is meticulous in her work
@@ -44,6 +46,9 @@ export default function About() {
 							Manor.
 						</p>
 						<div className='buttons'>
+							<Link to='/Contact' className='btn btn--sq'>
+								Contact Me &rarr;
+							</Link>
 							<a
 								href={resume}
 								target='_blank'
@@ -51,9 +56,6 @@ export default function About() {
 								className='btn btn--sq'>
 								My Resume &rarr;
 							</a>
-							<Link to='/Contact' className='btn btn--sq'>
-								Contact Me &rarr;
-							</Link>
 						</div>
 						{/* <div className='buttons transparent'>
 							<a
