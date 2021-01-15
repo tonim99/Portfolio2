@@ -8,7 +8,7 @@ export default function NavBar({ clickHandler, hideMenu }) {
 	return (
 		<nav className='nav'>
 			<div className='nav__brand-box'>
-				<Link className='nav__brand-box-link' to='/' onClick={hideMenu}>
+				<Link className='nav__brand-box-link' to='/Portfolio2' onClick={hideMenu}>
 					TM
 				</Link>
 			</div>

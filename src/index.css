@@ -27,3 +27,8 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
+::selection {
+	background-color: #de38c8;
+	color: #fff;
+}
