@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Projects.scss';
-import { Button, Spinner } from 'react-bootstrap';
+import { Spinner } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -20,35 +20,55 @@ export default function Projects() {
 	const loaded = () => (
 		<div className='project__container'>
 			{projects.map((project, i) => (
-				<div className='project__card' key={i}>
-					<h3 className='project__card-title'>{project.Title}</h3>
-					<p className='project__card-text'>{project.Description}</p>
-					<img
-						className='project__card-img'
-						src={project.Image}
-						alt='project'
-					/>
-					<div className='project__container-btn-grp'>
-						<Button
-							className='btn btn--sq'
-							href={project.FeRepoLink}
-							target='_blank'
-							rel='noreferrer'>
-							<Tooltip
-								background='#fff'
-								color='#000'
-								padding='5'
-								placement='top'
-								radius='2'
-								content='See Front-End Repo'>
-								<FontAwesomeIcon icon={faGithub} size='1x' color='white' />
-							</Tooltip>
-						</Button>
-						{project.BeRepoLink ? (
-							<Button
-								href={project.BeRepoLink}
-								target='_blank'
-								rel='noreferrer'>
+				<>
+					<div key={i} className='project__container-left'>
+						<img
+							src={project.Image}
+							alt='project'
+							className='project__container-left-img'
+						/>
+					</div>
+					<div className='project__container-right'>
+						<h3 className='heading-tert'>{project.Title}</h3>
+						<p className='content'>{project.Description}</p>
+						<h4 className='heading-four'>Tech Used</h4>
+						<p className='content-sub'>{project.SkillsUsed}</p>
+						<div className='btn-grp'>
+							{project.ProjectLink ? (
+								<Tooltip
+									background='#fff'
+									color='#000'
+									padding='5'
+									placement='top'
+									radius='2'
+									content='Visit Website'>
+									<a
+										href={project.ProjectLink}
+										className='btn btn--sq'
+										target='_blank'
+										rel='noreferrer'>
+										<FontAwesomeIcon icon={faExternalLinkAlt} size='1x' />
+									</a>
+								</Tooltip>
+							) : null}
+							{project.FeRepoLink ? (
+								<Tooltip
+									background='#fff'
+									color='#000'
+									padding='5'
+									placement='top'
+									radius='2'
+									content='See Front-End Repo'>
+									<a
+										href={project.FeRepoLink}
+										className='btn btn--sq'
+										target='_blank'
+										rel='noreferrer'>
+										<FontAwesomeIcon icon={faGithub} size='1x' color='white' />
+									</a>
+								</Tooltip>
+							) : null}
+							{project.BeRepoLink ? (
 								<Tooltip
 									background='#fff'
 									color='#000'
@@ -56,30 +76,22 @@ export default function Projects() {
 									placement='top'
 									radius='2'
 									content='See Back-End Repo'>
-									<FontAwesomeIcon icon={faCode} size='1x' color='white' />
+									<a
+										href={project.BeRepoLink}
+										className='btn btn--sq'
+										target='_blank'
+										rel='noreferrer'>
+										<FontAwesomeIcon icon={faCode} size='1x' color='white' />
+									</a>
 								</Tooltip>
-							</Button>
-						) : null}
-						<Button href={project.ProjectLink} target='_blank' rel='noreferrer'>
-							<Tooltip
-								background='#fff'
-								color='#000'
-								padding='5'
-								placement='top'
-								radius='2'
-								content='Visit Website'>
-								<FontAwesomeIcon
-									icon={faExternalLinkAlt}
-									size='1x'
-									color='white'
-								/>
-							</Tooltip>
-						</Button>
+							) : null}
+						</div>
 					</div>
-				</div>
+				</>
 			))}
 		</div>
 	);
+
 	return projects.length > 0 ? (
 		loaded()
 	) : (
