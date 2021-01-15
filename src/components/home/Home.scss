@@ -1,5 +1,5 @@
 .header {
-	height: 98vh;
+	height: 93vh;
 	background-image: linear-gradient(
 			to right bottom,
 			rgba(255, 255, 255, 0.5),
@@ -9,6 +9,7 @@
 	background-size: cover;
 	background-position: center;
 	position: relative;
+	margin-bottom: 4.5rem;
 
 	&__statement-box {
 		position: absolute;
