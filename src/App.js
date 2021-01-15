@@ -22,7 +22,8 @@ export default function App() {
 			{showMenu ? <Menu hideMenu={hideMenu} /> : null}
 			<Switch>
 				<Route exact path='/'>
-					{showMenu ? null : <Home />}
+					<Home />
+					{/* {showMenu ? null : <Home />} */}
 				</Route>
 				<Route exact path='/contact'>
 					{showMenu ? null : <Contact />}
