@@ -7,7 +7,7 @@
 		position: relative;
 		top: 2rem;
 		left: 1rem;
-		transition: all 0.2s;
+		transition: transform 0.3s ease;
 
 		&-link {
 			font-size: 3.5rem;
@@ -15,7 +15,7 @@
 			font-family: 'Kaushan Script', cursive;
 			font-weight: bold;
 			text-decoration: none;
-
+			
 			&:link,
 			&:visited {
 				text-decoration: none;
@@ -23,7 +23,7 @@
 			}
 
 			&:hover {
-				transform: translateY(-3px);
+				transform: scale(1.1);
 				color:#de38c8;
 				font-size: 3.6rem;
 			}
