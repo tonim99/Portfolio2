@@ -30,12 +30,9 @@ color: #000000;
 .project__container {
 	min-height: 100vh;
 	position: relative;
-	// border-top: 2px solid black;
-	// margin-top: 2rem;
 	margin-bottom: 6rem;
 	display: grid;
 	grid-auto-columns: 1fr;
-	// grid-template-rows: 1fr 1fr;
 
 	@media (min-width: 768px) {
 		grid-template-columns: 1fr 1fr;
@@ -49,7 +46,8 @@ color: #000000;
 		overflow: hidden;
 		z-index: 3;
 		@media (min-width: 768px) {
-			background-color: white;
+			// background-color: white;
+			background-color: #151515;
 			height: 80vh;
 		}
 		&:first-child {
@@ -63,14 +61,15 @@ color: #000000;
 			}
 		}
 
-		// justify-content: center;
 		&-img {
-			// height: 50%;
+			max-width: 90%;
+			max-height: 100%;
+			object-fit: scale-down;
 			display: block;
 			margin: 0 auto;
-			width: 90%;
-			// height: 95%;
 			padding-top: 2.5rem;
+
+
 		}
 	}
 
@@ -79,7 +78,8 @@ color: #000000;
 		position: relative;
 		z-index: 1;
 		// background-color: rgba(128, 0, 0, 0.906);
-		background-color: black;
+		// background-color: black;
+		background-color: #151515;
 		margin-top: -10rem;
 		padding-bottom: 8rem;
 		@media (min-width: 768px) {
@@ -126,7 +126,8 @@ color: #000000;
 			margin: 0 auto;
 
 			.btn--sq {
-				background-color: black;
+				// background-color: black;
+				background-color: transparent;
 				color: white;
 				border-radius: 2px;
 				padding: 1rem 4rem;
