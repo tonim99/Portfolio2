@@ -7,15 +7,16 @@
 		position: relative;
 		top: 2rem;
 		left: 1rem;
-		transition: transform 0.3s ease;
 
 		&-link {
+			display: block;
 			font-size: 3.5rem;
 			color: black;
 			font-family: 'Kaushan Script', cursive;
 			font-weight: bold;
 			text-decoration: none;
-			
+			transition: transform 0.3s;
+
 			&:link,
 			&:visited {
 				text-decoration: none;
@@ -23,9 +24,20 @@
 			}
 
 			&:hover {
-				transform: scale(1.1);
-				color:#de38c8;
-				font-size: 3.6rem;
+				// transform: scale(1.1);
+				transform: translateY(-3px);
+				color: #de38c8;
+				// font-size: 3.6rem;
+				text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+
+				&::after {
+					transform: scaleX(1.4) scaleY(1.6);
+					opacity: 0;
+				}
+			}
+			&:active {
+				transform: translateY(1px);
+				text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 			}
 		}
 	}
@@ -53,9 +65,3 @@
 		}
 	}
 }
-// .fa-bars {
-// 	&:hover,
-// 	&:active {
-// 		color: #de38c8;
-// 	}
-// }

@@ -1,84 +1,85 @@
 .about {
-	margin: 1rem;
-	margin-top: 7.5rem;
-	// position: absolute;
-	background-size: cover;
-	background-position: center;
+	margin: 0 auto;
+	margin-top: 6.5rem;
 	min-height: 100vh;
-	position: relative;
-	margin-bottom: 4.5rem;
+	margin-bottom: 6.4rem;
+	max-width: 120rem;
+	@media only screen and (min-width: 37.5em) {
+		
+	}
 
-	
 	&__img {
-		position: relative;
-		border-radius: 50%;
 		display: block;
+		margin: 0 auto;
+		border-radius: 50%;
 		width: 55%;
-		margin: 2rem auto;
+		max-width: 43rem;
 
-		@media (min-width: 768px) {
+		@media only screen and (min-width: 37.5em) {
+			float: right;
+			border-radius: 0%;
+			margin: 3.5rem;
 			outline: 1rem solid #333333;
-			width: 90%;
-			border-radius: 2px;
-			outline-offset: 3rem;
-			margin-top: 10rem;
-			margin-left: 5rem;
-			box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.2);
+			outline-offset: 2rem;
+		}
+		@media only screen and (min-width: 56.25em) {
+			margin-bottom: 6rem; 
 		}
 	}
 
-	&__content {
+	&__text {
 		font-size: 1.6rem;
-		padding-top: 4rem;
-	}
-	p:last-of-type {
-		margin-bottom: 3rem;
+		margin-top: 2rem;
+		padding: 0 2rem;
+		word-wrap: break-word;
 	}
 
-	.btn--sq {
-		border-bottom: 2px solid #de38c8;
-		border-radius: 3px;
-		padding: 1rem;
-		&:hover {
-			background-color: #de38c8;
+}
+.buttons {
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	margin: 4rem auto;
+
+	.btn {
+		&--sq {
+			border-bottom: 2px solid #de38c8;
+			border-radius: 3px;
+			padding: 1rem;
+	
+			&:hover,
+			&:active {
+				background-color: #de38c8;
+			}
 		}
-	}
+	}	
+}
 
-	.buttons {
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-	}
+.tech {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 1rem;
+	transition: transform 5s ease-in-out;
+}
 
-	.tech {
-		// display: none;
-		h3 {
-			margin-top: 3rem;
-		}
-		// @media (min-width: 768px) {
-			display: block;
-			padding: 3rem;
-		// }
-	}
+.heading-three {
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.icons {
+	display: flex;
+	margin-top: .5rem;
+	width: 50%;
+	justify-content: space-around;
 	.icon {
-		margin: 1rem;
+		transition: all .3s ease-in;
 	}
-	&__box {
-		// display: none;
-		// @media (min-width: 768px) {
-			position: absolute;
-			background-color: #de38c8;
-			min-width: 35rem;
-			min-height: 30rem;
-			display: block;
-			right: 0;
-			bottom: 0;
-		// }
+	@media only screen and (min-width: 37.5em) {
+		max-width: 25rem;
 	}
-	.transparent {
-		opacity: 0;
-		@media (min-width: 768px) {
-			display: none;
-		}
+	.icon:hover {
+		transform: scale(1.5)
 	}
 }

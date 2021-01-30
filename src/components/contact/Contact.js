@@ -7,7 +7,7 @@ import {
 	faLinkedin,
 	faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
-import resume from '../../assets/resume/Morris Resume1121.pdf';
+import resume from '../../assets/resume/Morris_Tonimarie_Resume.pdf';
 
 export default function Contact() {
 	return (

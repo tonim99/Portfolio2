@@ -1,23 +1,11 @@
-import React from 'react';
-import './About.scss';
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDatabase} from '@fortawesome/free-solid-svg-icons';
-import {
-	faBootstrap,
-	faSass,
-	faReact,
-	faJs,
-} from '@fortawesome/free-brands-svg-icons';
-import image from '../../../src/assets/images/portfolio-pic.jpg';
-import resume from '../../assets/resume/Morris_Tonimarie_Resume.pdf';
-
-export default function About() {
-	return (
-		<div className='about'>
-			<h2 className='heading-secondary heading-secondary--main'>About Me</h2>
-			<img src={image} alt='profile' className='about__img' />
-			<div className='about__text'>
+<>
+	<Container className='about'>
+		<Row xs={1} md={2}>
+			<Col md={{ order: 2 }}>
+				<img src={image} alt='profile' className='about__img' />
+			</Col>
+			<Col className='about__content' md={{ order: 1 }}>
+				<h2 className='heading-secondary heading-secondary--main'>About Me</h2>
 				<p>
 					Hello! I'm Tonimarie. I am a full-stack software engineer, based in
 					the beautiful Shenandoah Valley, who is meticulous in her work and
@@ -36,54 +24,53 @@ export default function About() {
 					set, I'm volunteering locally, spending time with my two Akitas, or
 					singing with the band Blues Soup and the duo 4th Street Manor.
 				</p>
-			</div>
-			<div className='buttons'>
-				<Link to='/Contact' className='btn btn--sq'>
-					Contact Me &rarr;
-				</Link>
-				<a
-					href={resume}
-					target='_blank'
-					rel='noreferrer'
-					className='btn btn--sq'>
-					My Resume &rarr;
-				</a>
-			</div>
-			<div className='tech'>
-				<h3 className='heading-three'>Some Technologies I use</h3>
-				<div className='icons'>
+				<div className='buttons'>
+					<Link to='/Contact' className='btn btn--sq'>
+						Contact Me &rarr;
+					</Link>
+					<a
+						href={resume}
+						target='_blank'
+						rel='noreferrer'
+						className='btn btn--sq'>
+						My Resume &rarr;
+					</a>
+				</div>
+
+				<Col className='tech' md={{ order: 3 }}>
+					<h3>Some Technologies I use</h3>
 					<FontAwesomeIcon
 						className='icon'
 						icon={faJs}
 						size='2x'
-						color='#de38c8'
+						color='black'
 					/>
 					<FontAwesomeIcon
 						className='icon'
 						icon={faReact}
 						size='2x'
-						color='#de38c8'
+						color='black'
 					/>
 					<FontAwesomeIcon
 						className='icon'
 						icon={faBootstrap}
 						size='2x'
-						color='#de38c8'
+						color='black'
 					/>
 					<FontAwesomeIcon
 						className='icon'
 						icon={faSass}
 						size='2x'
-						color='#de38c8'
+						color='black'
 					/>
 					<FontAwesomeIcon
 						className='icon'
 						icon={faDatabase}
 						size='2x'
-						color='#de38c8'
+						color='black'
 					/>
-				</div>
-			</div>
-		</div>
-	);
-}
+				</Col>
+			</Col>
+		</Row>
+	</Container>
+</>;

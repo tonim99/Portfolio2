@@ -14,13 +14,13 @@ color: #000000;
 		animation-duration: 1s;
 		animation-timing-function: ease-out;
 
-		@media (max-width: 56.25em) {
+		@media only screen and (max-width: 56.25em) {
 			padding-top: 2rem;
 			font-size: 5.5rem;
 			letter-spacing: 2.5rem;
 		}
-			@media (max-width: 37.5em) {
-			padding-top: 1rem;
+		@media only screen and (max-width: 37.5em) {
+			margin-top: .2rem;
 			font-size: 4rem;
 			letter-spacing: 1.5rem;
 		}
@@ -34,65 +34,64 @@ color: #000000;
 	display: grid;
 	grid-auto-columns: 1fr;
 
-	@media (min-width: 768px) {
+	@media only screen and (min-width: 48em) {
 		grid-template-columns: 1fr 1fr;
 	}
-	@media (min-width: 1150px) {
+	@media only screen and (min-width: 71.88em) {
 		margin: 10rem;
 	}
 
 	&-left {
-		margin-top: 2rem;
+		margin-top: -2rem;
 		overflow: hidden;
 		z-index: 3;
-		@media (min-width: 768px) {
-			// background-color: white;
+		display: flex;
+
+		@media only screen and (min-width: 48em) {
 			background-color: #151515;
 			height: 80vh;
+			margin-top: 2rem;
 		}
 		&:first-child {
-			@media (min-width: 768px) {
+			@media only screen and (min-width: 48em) {
 				grid-row: 1 / 2;
 			}
 		}
 		&:second-child {
-			@media (min-width: 768px) {
+			@media only screen and (min-width: 48em) {
 				grid-row: 2 / 3;
 			}
 		}
 
 		&-img {
-			max-width: 90%;
+			max-width: 30rem;
 			max-height: 100%;
 			object-fit: scale-down;
 			display: block;
-			margin: 0 auto;
-			padding-top: 2.5rem;
-
-
+			margin: 2rem auto;
 		}
 	}
 
 	&-right {
-		// grid-row: 2 / 3;
 		position: relative;
 		z-index: 1;
-		// background-color: rgba(128, 0, 0, 0.906);
-		// background-color: black;
 		background-color: #151515;
-		margin-top: -10rem;
+		margin-top: -14rem;
 		padding-bottom: 8rem;
-		@media (min-width: 768px) {
+
+		@media only screen and (min-width: 48em) {
 			height: 80vh;
 			margin-top: 2rem;
 		}
+
 		.heading-tert {
-			margin-top: 8rem;
+			margin-top: 10rem;
 			padding: 2rem;
 			color: white;
 			font-weight: bold;
 			font-size: 3.5rem;
 		}
+
 		.content {
 			padding-left: 2rem;
 			color: white;
@@ -126,7 +125,6 @@ color: #000000;
 			margin: 0 auto;
 
 			.btn--sq {
-				// background-color: black;
 				background-color: transparent;
 				color: white;
 				border-radius: 2px;
@@ -135,12 +133,14 @@ color: #000000;
 		}
 	}
 }
+
 .spinner-container {
 	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+
 .spinner {
 	color: #de38c8;
 	height: 7.5rem;
