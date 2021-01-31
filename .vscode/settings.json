@@ -27,5 +27,12 @@
         "w",
         "y",
         "ygwu"
-    ]
+    ],
+    "emmet.excludeLanguages": [
+
+        "markdown"
+    ],
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    }
 }
