@@ -48,10 +48,12 @@
 		padding: 1rem;
 		transition: all 0.2s;
 		cursor: pointer;
+		.fa-bars:hover {
+			color: #de38c8 !important;
+		}
 		&:hover {
 			transform: translateY(-3px);
 			box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-
 			&::after {
 				transform: scaleX(1.4) scaleY(1.6);
 				opacity: 0;

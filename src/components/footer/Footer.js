@@ -15,19 +15,39 @@ export default function Footer() {
 				href='https://www.linkedin.com/in/tonim99/'
 				target='_blank'
 				rel='noreferrer'>
-				<FontAwesomeIcon icon={faLinkedin} size='3x' color='white' />
+				<FontAwesomeIcon
+					className='icon'
+					icon={faLinkedin}
+					size='3x'
+					color='white'
+				/>
 			</a>
 			<a href='https://github.com/tonim99' target='_blank' rel='noreferrer'>
-				<FontAwesomeIcon icon={faGithub} size='3x' color='white' />
+				<FontAwesomeIcon
+					className='icon'
+					icon={faGithub}
+					size='3x'
+					color='white'
+				/>
 			</a>
 			<a href='mailto:morris.tonimarie@gmail.com'>
-				<FontAwesomeIcon icon={faEnvelope} size='3x' color='white' />
+				<FontAwesomeIcon
+					className='icon'
+					icon={faEnvelope}
+					size='3x'
+					color='white'
+				/>
 			</a>
 			<a
 				href='https://twitter.com/TonimarieMorri1'
 				target='_blank'
 				rel='noreferrer'>
-				<FontAwesomeIcon icon={faTwitter} size='3x' color='white' />
+				<FontAwesomeIcon
+					className='icon'
+					icon={faTwitter}
+					size='3x'
+					color='white'
+				/>
 			</a>
 		</footer>
 	);

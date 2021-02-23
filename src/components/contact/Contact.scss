@@ -49,7 +49,8 @@
 		.icon {
 			transition: transform 0.2s;
 			&:hover {
-				transform: scale(1.2);
+				color: #de38c8 !important;
+				transform: scale(1.3);
 			}
 		}
 	}

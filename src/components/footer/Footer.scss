@@ -14,4 +14,11 @@
 	a {
 		padding: .5rem 1rem;
 	}
+	.icon {
+		transition: all .2s;
+		&:hover {
+			color: #de38c8 !important;
+			transform: scale(1.3);
+		}
+	}
 }

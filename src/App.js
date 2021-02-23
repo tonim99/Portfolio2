@@ -18,7 +18,8 @@ export default function App() {
 	const hideMenu = () => showMenu ? setShowMenu(!showMenu) : null
 	return (
 		<div className='App'>
-			<NavBar clickHandler={clickHandler} hideMenu={hideMenu} />
+			<NavBar clickHandler={clickHandler} 
+					hideMenu={hideMenu} />
 			{showMenu ? <Menu hideMenu={hideMenu} /> : null}
 			<Switch>
 				<Route exact path='/Portfolio2'>

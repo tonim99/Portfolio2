@@ -17,20 +17,21 @@ export default function Projects() {
 			.then((data) => setProjects(data))
 			.catch((err) => console.warn(err));
 	}, []);
+
 	const loaded = () => (
 		<>
-			<h2 className='heading-secondary heading-secondary--main margin-top-md'>Projects</h2>
+			<h2 className='heading-secondary heading-secondary--main margin-top-md'>
+				Projects
+			</h2>
 			<div className='project__container'>
 				{projects.map((project, i) => (
-					<>
-						<div key={i} className='project__container-left'>
-							<img
-								src={project.Image}
-								alt='project'
-								className='project__container-left-img'
-							/>
-						</div>
-						<div className='project__container-right'>
+					<div className='project__grid'>
+						<img
+							src={project.Image}
+							alt='project'
+							className='project__grid-img'
+						/>
+						<div className='content__container'>
 							<h3 className='heading-tert'>{project.Title}</h3>
 							<p className='content'>{project.Description}</p>
 							<h4 className='heading-four'>Tech Used</h4>
@@ -93,12 +94,11 @@ export default function Projects() {
 								) : null}
 							</div>
 						</div>
-					</>
+					</div>
 				))}
 			</div>
 		</>
 	);
-
 	return projects.length > 0 ? (
 		loaded()
 	) : (
