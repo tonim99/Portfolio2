@@ -1,18 +1,16 @@
 .header {
-	height: 95vh;
+	height: calc(100vh - 4.4rem);
 	background-image: linear-gradient(
 			to right bottom,
 			rgba(255, 255, 255, 0.5),
 			rgba(0, 0, 0, 0.5)
 		),
-		url(../../assets/images/hero-img-bw.png);
+		url(../../assets/images/hero-img-bw.jpg);
 	background-size: cover;
 	background-position: center;
 	position: relative;
-	margin-bottom: 4.4rem;
 	@media only screen and (min-width: 37.5em) {
-		height: 92.5vh;
-		margin-bottom: 4.5rem;
+		height: calc(100vh - 6.4rem);
 	}
 
 	&__statement-box {
