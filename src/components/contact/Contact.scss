@@ -1,6 +1,5 @@
 .contact-container {
 	position: absolute;
-	background-color: black;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -80%);
@@ -8,6 +7,7 @@
 	width: 40rem;
 	border-radius: 0.5rem;
 	box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.2);
+	background-color: black;
 
 	@media only screen and (min-width: 48em) {
 		height: 30rem;
@@ -31,9 +31,10 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -70%);
-
+		
 		&-links {
 			display: flex;
+			align-items: center;
 			justify-content: space-around;
 			font-size: 1.5rem;
 			
