@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.96355d20.chunk.css",
+    "main.css": "/static/css/main.ed5eb725.chunk.css",
     "main.js": "/static/js/main.ff0d3f71.chunk.js",
     "main.js.map": "/static/js/main.ff0d3f71.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.08b3088f.js",
@@ -12,17 +12,17 @@
     "static/js/3.ad10bf9e.chunk.js.map": "/static/js/3.ad10bf9e.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.1a02f21c.chunk.css.map": "/static/css/2.1a02f21c.chunk.css.map",
-    "static/css/main.96355d20.chunk.css.map": "/static/css/main.96355d20.chunk.css.map",
+    "static/css/main.ed5eb725.chunk.css.map": "/static/css/main.ed5eb725.chunk.css.map",
     "static/js/2.b5f1a2b9.chunk.js.LICENSE.txt": "/static/js/2.b5f1a2b9.chunk.js.LICENSE.txt",
     "static/media/Morris_Tonimarie_Resume.90a83b0b.pdf": "/static/media/Morris_Tonimarie_Resume.90a83b0b.pdf",
-    "static/media/Home.scss": "/static/media/hero-img-bw.da033419.jpg",
+    "static/media/Home.scss": "/static/media/hero-img-bw.bfd9b4bd.png",
     "static/media/portfolio-pic.424d5d8a.jpg": "/static/media/portfolio-pic.424d5d8a.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.08b3088f.js",
     "static/css/2.1a02f21c.chunk.css",
     "static/js/2.b5f1a2b9.chunk.js",
-    "static/css/main.96355d20.chunk.css",
+    "static/css/main.ed5eb725.chunk.css",
     "static/js/main.ff0d3f71.chunk.js"
   ]
 }
