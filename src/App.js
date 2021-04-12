@@ -21,7 +21,7 @@ export default function App() {
 			<NavBar clickHandler={clickHandler} hideMenu={hideMenu} />
 			{showMenu ? <Menu hideMenu={hideMenu} /> : null}
 			<Switch>
-				<Route exact path='/Portfolio2'>
+				<Route exact path='/'>
 					{showMenu ? null : <Home />}
 				</Route>
 				<Route exact path='/contact'>
