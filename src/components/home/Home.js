@@ -12,7 +12,7 @@ export default function Home() {
 						Full-Stack Software Engineer
 					</span>
 				</h1>
-				<Link to='/projects' className='btn btn--pink btn--animated'>
+				<Link to='/portfolio' className='btn btn--pink btn--animated'>
 					See my work
 				</Link>
 			</div>

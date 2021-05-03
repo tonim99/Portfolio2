@@ -27,7 +27,7 @@ export default function App() {
 				<Route exact path='/contact'>
 					{showMenu ? null : <Contact />}
 				</Route>
-				<Route exact path='/projects'>
+				<Route exact path='/portfolio'>
 					{showMenu ? null : <Projects />}
 				</Route>
 				<Route exact path='/about'>

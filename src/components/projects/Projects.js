@@ -21,7 +21,7 @@ export default function Projects() {
 	const loaded = () => (
 		<>
 			<h2 className='heading-secondary heading-secondary--main margin-top-md'>
-				Projects
+				Portfolio
 			</h2>
 			<div className='project__container'>
 				{projects.map((project, i) => (
