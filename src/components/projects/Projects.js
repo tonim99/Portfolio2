@@ -17,7 +17,7 @@ export default function Projects() {
 			.then((data) => setProjects(data))
 			.catch((err) => console.warn(err));
 	}, []);
-
+	// console.log(projects, 'projects')
 	const loaded = () => (
 		<>
 			<h2 className='heading-secondary heading-secondary--main margin-top-md'>
@@ -103,9 +103,10 @@ export default function Projects() {
 		loaded()
 	) : (
 		<div className='spinner-container'>
-			<Spinner className='spinner' animation='border' role='status'>
+			{/* <Spinner className='spinner' animation='border' role='status'>
 				<span className='sr-only'>Loading...</span>
-			</Spinner>
+			</Spinner> */}
+			<p className='construction'>Page under construction. Please check back later.</p>
 		</div>
 	);
 }
