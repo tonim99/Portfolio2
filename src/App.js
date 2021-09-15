@@ -5,11 +5,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/home/Home';
 import Footer from './components/footer/Footer';
 import Contact from './components/contact/Contact';
-// import Projects from './components/projects/Projects';
+import Projects from './components/projects/Projects';
 import Menu from './components/menu/Menu';
 import About from './components/about/About';
 import NavBar from './components/navbar/Navbar';
-import Construction from './components/construction/Construction';
+// import Construction from './components/construction/Construction';
 
 export default function App() {
 	const [showMenu, setShowMenu] = useState(false);
@@ -28,12 +28,12 @@ export default function App() {
 				<Route exact path='/contact'>
 					{showMenu ? null : <Contact />}
 				</Route>
-				{/* <Route exact path='/portfolio'>
-					{showMenu ? null : <Projects />}
-				</Route> */}
 				<Route exact path='/portfolio'>
-					{showMenu ? null : <Construction />}
+					{showMenu ? null : <Projects />}
 				</Route>
+				{/* <Route exact path='/portfolio'>
+					{showMenu ? null : <Construction />}
+				</Route> */}
 				<Route exact path='/about'>
 					{showMenu ? null : <About />}
 				</Route>

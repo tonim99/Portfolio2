@@ -106,7 +106,7 @@ export default function Projects() {
 			{/* <Spinner className='spinner' animation='border' role='status'>
 				<span className='sr-only'>Loading...</span>
 			</Spinner> */}
-			<p className='construction'>Page under construction. Please check back later.</p>
+			<p className='construction'>This page is currently under construction. Please check back later. In the meantime, you can view my GitHub <a href="https://github.com/tonim99" className="link">here</a>.</p>
 		</div>
 	);
 }
